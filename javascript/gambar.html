@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar - Najmi Taqiy Syach</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            align-items: center;
+            text-align: center;
+            border: 1px solid rgb(132, 0, 255);
+        }
+    </style>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">-Choose picture-</option>
+        <option value="ronaldo">Ronaldo</option>
+        <option value="degea">Degea</option>
+        <option value="pogba">Pogba</option>
+        <option value="rangnick">Rangnick</option>
+        <option value="okezone">Okezone</option>
+    </select>
+    <div id="hasil"></div>
+
+    <script>
+        let daftar = document.getElementById("daftar")
+        let hasil = document.getElementById("hasil")
+
+        function tampil() {
+            switch (daftar.value) {
+                case "ronaldo":
+                    hasil.innerHTML = '<img src="https://img.antaranews.com/cache/800x533/2019/12/30/skysports-cristiano-ronaldo_4822329.jpg" alt="">'
+                    alert("Ini adalah gambar Ronaldo")
+                    break;
+
+                case "degea":
+                    hasil.innerHTML = '<img src="https://cdn-asset.jawapos.com/wp-content/uploads/2021/09/David-De-Gea-750x773.jpg" alt="">'
+                    alert("Ini adalah gambar Degea")
+                    break;
+
+                case "pogba":
+                    hasil.innerHTML = '<img src="https://img.a.transfermarkt.technology/portrait/header/122153-1582114937.jpg?lm=1" alt="">'
+                    alert("Ini adalah Gambar Pogba")
+                    break;
+
+                case "rangnick":
+                    hasil.innerHTML = '<img src="https://img.a.transfermarkt.technology/portrait/header/196-1532352752.jpg?lm=1" alt="">'
+                    alert("Ini adalah gambar Rangnick")
+                    break;
+
+                case "okezone":
+                    hasil.innerHTML = '<img src="https://img.okezone.com/content/2021/12/13/45/2516…ed-nomor-2-ditendang-ralf-rangnick-PffaUa8D2i.jpg" alt="">'
+                    alert("Ini adalah gambar Okezone")
+                    break;
+
+            
+
+                default:
+                    hasil.innerHTML = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
